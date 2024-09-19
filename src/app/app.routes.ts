@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './auth/login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthGuard } from './shared/services/auth.guard';
-import { HomeComponent } from './dashboard/home/home.component';
+import { DashboardComponent } from './view/dashboard/dashboard.component';
+import { HomeComponent } from './view/home.component';
 
 export const routes: Routes = [
     { path: 'auth/login', component: LoginComponent, canActivate:[AuthGuard] },
